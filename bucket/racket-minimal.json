@@ -1,16 +1,16 @@
 {
-    "version": "8.6",
+    "version": "8.15",
     "description": "Minimal Racket installation, without DrRacket/docs",
     "homepage": "https://racket-lang.org",
     "license": "LGPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.racket-lang.org/installers/8.6/racket-minimal-8.6-x86_64-win32.exe#/dl.7z",
-            "hash": "d3997502cf887c95c4dc39f1f72d8b1e76367919cc2afe5e58d4db65d760bf9d"
+            "url": "https://mirror.racket-lang.org/installers/8.15/racket-minimal-8.15-x86_64-win32.exe#/dl.7z",
+            "hash": "927406877505905af73df3a3a278823d7bd80b35ffcb93e4d952707db9e520fd"
         },
         "32bit": {
-            "url": "https://mirror.racket-lang.org/installers/8.6/racket-minimal-8.6-i386-win32.exe#/dl.7z",
-            "hash": "30871b1fbadfc36a64ade673f25f9ac2918204ad65c0516f3bcb62c2e3b88aae"
+            "url": "https://mirror.racket-lang.org/installers/8.15/racket-minimal-8.15-i386-win32.exe#/dl.7z",
+            "hash": "6110ca88b11171a0f18875c7a6cf836b792e54af258ce595619ff9d17c6378d9"
         }
     },
     "bin": [

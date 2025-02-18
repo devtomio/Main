@@ -1,26 +1,26 @@
 {
-    "version": "5.4.4",
+    "version": "5.4.7",
     "description": "A tool for building self-running Lua programs",
     "homepage": "https://github.com/LuaDist/srlua",
     "license": "MIT",
     "architecture": {
         "64bit": {
             "url": [
-                "https://joedf.ahkscript.org/LuaBuilds/hdata/srlua-5.4.4_Win64_bin.zip",
+                "https://joedf.ahkscript.org/LuaBuilds/hdata/srlua-5.4.7_Win64_bin.zip",
                 "https://joedf.ahkscript.org/LuaBuilds/hdata/libgcc_s_dw2-1.dll.zip"
             ],
             "hash": [
-                "9dfe0bfd2d1aa1bbb292e8478a963bb6b38cecac413804e882381e481d7f5528",
+                "89d2a8d1dcf4241d135afb379f6cc4e9c6335a174e8cad4021fc43552cfb2401",
                 "546204ef8af80565b051b0d5dec2d885ae524cf060f99683e038e4b49b60d9e5"
             ]
         },
         "32bit": {
             "url": [
-                "https://joedf.ahkscript.org/LuaBuilds/hdata/srlua-5.4.4_Win32_bin.zip",
+                "https://joedf.ahkscript.org/LuaBuilds/hdata/srlua-5.4.7_Win32_bin.zip",
                 "https://joedf.ahkscript.org/LuaBuilds/hdata/libgcc_s_dw2-1.dll.zip"
             ],
             "hash": [
-                "438070bdda27bc10b0533eabf5a1dd62af33eb40f234d75397ff13fe0d61faa6",
+                "8f96525f4095f5423ef9c3182b7af34650591fcceb13869e71c31437ae3ea38b",
                 "546204ef8af80565b051b0d5dec2d885ae524cf060f99683e038e4b49b60d9e5"
             ]
         }

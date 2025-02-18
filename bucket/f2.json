@@ -1,27 +1,29 @@
 {
-    "version": "1.8.0",
+    "version": "2.0.3",
     "description": "Batch renaming files and directories quickly and safely.",
-    "homepage": "https://github.com/ayoisaiah/f2",
+    "homepage": "https://f2.freshman.tech",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ayoisaiah/f2/releases/download/v1.8.0/f2_1.8.0_windows_amd64.tar.gz",
-            "hash": "1e4c902483f668f3c3edaec52421a34ebc09b8e2a52047e4495dcd05cb2bb956"
+            "url": "https://github.com/ayoisaiah/f2/releases/download/v2.0.3/f2_2.0.3_windows_amd64.zip",
+            "hash": "5e987d3c1278cc46ea74044dc8d162c619908006c4ee8459544168e04fff87a5"
         },
         "32bit": {
-            "url": "https://github.com/ayoisaiah/f2/releases/download/v1.8.0/f2_1.8.0_windows_i386.tar.gz",
-            "hash": "27b29c1a68dfdbe63d23cfd9cc2348f7b09627de2fb81b6d56f3cc94ac517a29"
+            "url": "https://github.com/ayoisaiah/f2/releases/download/v2.0.3/f2_2.0.3_windows_386.zip",
+            "hash": "404a2d6f5a88c78ea1dd79535285c0d7e75fda82e4c147c8c77373645ba4c1e2"
         }
     },
     "bin": "f2.exe",
-    "checkver": "github",
+    "checkver": {
+        "github": "https://github.com/ayoisaiah/f2"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/ayoisaiah/f2/releases/download/v$version/f2_$version_windows_amd64.tar.gz"
+                "url": "https://github.com/ayoisaiah/f2/releases/download/v$version/f2_$version_windows_amd64.zip"
             },
             "32bit": {
-                "url": "https://github.com/ayoisaiah/f2/releases/download/v$version/f2_$version_windows_i386.tar.gz"
+                "url": "https://github.com/ayoisaiah/f2/releases/download/v$version/f2_$version_windows_386.zip"
             }
         },
         "hash": {

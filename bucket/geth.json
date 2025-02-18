@@ -1,18 +1,18 @@
 {
-    "version": "1.10.25",
+    "version": "1.15.2",
     "description": "Official Go implementation of the Ethereum protocol",
     "homepage": "https://geth.ethereum.org",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://gethstore.blob.core.windows.net/builds/geth-alltools-windows-amd64-1.10.25-69568c55.zip",
-            "hash": "md5:a8324aa9547faea3ef4c99e82d0027e9",
-            "extract_dir": "geth-alltools-windows-amd64-1.10.25-69568c55"
+            "url": "https://gethstore.blob.core.windows.net/builds/geth-alltools-windows-amd64-1.15.2-c8c62daf.zip",
+            "hash": "md5:6840e5113a74dc2feaba90ca8369f53b",
+            "extract_dir": "geth-alltools-windows-amd64-1.15.2-c8c62daf"
         },
         "32bit": {
-            "url": "https://gethstore.blob.core.windows.net/builds/geth-alltools-windows-386-1.10.25-69568c55.zip",
-            "hash": "md5:7ba4711d4a3448fd3a19be96da559aed",
-            "extract_dir": "geth-alltools-windows-386-1.10.25-69568c55"
+            "url": "https://gethstore.blob.core.windows.net/builds/geth-alltools-windows-386-1.15.2-c8c62daf.zip",
+            "hash": "md5:99622680724c90678662ae1a1e148fc4",
+            "extract_dir": "geth-alltools-windows-386-1.15.2-c8c62daf"
         }
     },
     "bin": [
@@ -21,7 +21,6 @@
         "clef.exe",
         "evm.exe",
         "geth.exe",
-        "puppeth.exe",
         "rlpdump.exe"
     ],
     "checkver": {

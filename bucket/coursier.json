@@ -1,10 +1,10 @@
 {
-    "version": "2.1.0-M7",
+    "version": "2.1.25-M1",
     "description": "Pure Scala Artifact Fetching",
     "homepage": "https://github.com/coursier/coursier",
     "license": "Apache-2.0",
-    "url": "https://github.com/coursier/coursier/releases/download/v2.1.0-M7/coursier#/coursier.jar",
-    "hash": "64a96d37f9b86723abf7c939cf81df3e1ea36d150ce8c21ec3e356a3b500cfda",
+    "url": "https://github.com/coursier/coursier/releases/download/v2.1.25-M1/coursier#/coursier.jar",
+    "hash": "bef250dd13dba360ddd794e70b71f1ee511e89116e7392ec753786a72aff0aae",
     "bin": "coursier.jar",
     "env_set": {
         "COURSIER_CACHE": "$dir\\cache",

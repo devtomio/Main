@@ -1,12 +1,16 @@
 {
-    "version": "2.6.1",
+    "version": "2.9.1",
     "description": "HTTP/2 web server with automatic HTTPS",
     "homepage": "https://caddyserver.com",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/caddyserver/caddy/releases/download/v2.6.1/caddy_2.6.1_windows_amd64.zip",
-            "hash": "sha512:e936569b6cec59693a7b588d88c7cffd71bdf2c411e8d1e120f2d8b16db04ff25041e3f747f27c750c045440f5a738ea91aa6ac12be2a1bb85d6ffdd2d8c351f"
+            "url": "https://github.com/caddyserver/caddy/releases/download/v2.9.1/caddy_2.9.1_windows_amd64.zip",
+            "hash": "sha512:4f0f85b42015ff2276d08705751472e6a98bdc7fda5ec76dd41b7a0c16fee90af012f1a7beb226164408cfbe656bd3453ed5ccbb596f80c45d0fa1c749fc8da2"
+        },
+        "arm64": {
+            "url": "https://github.com/caddyserver/caddy/releases/download/v2.9.1/caddy_2.9.1_windows_arm64.zip",
+            "hash": "sha512:e10aa551eabac9a6064e91d796a0901faf273b268edf86962a4d00fdc70106456fae0821180664a67fb004acfcd0931a15a12c4d6b9826690bee1ef1e758e9d7"
         }
     },
     "bin": "caddy.exe",
@@ -17,6 +21,9 @@
         "architecture": {
             "64bit": {
                 "url": "https://github.com/caddyserver/caddy/releases/download/v$version/caddy_$version_windows_amd64.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/caddyserver/caddy/releases/download/v$version/caddy_$version_windows_arm64.zip"
             }
         },
         "hash": {

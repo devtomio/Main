@@ -1,12 +1,12 @@
 {
-    "version": "4.0.1",
+    "version": "6.0.2",
     "description": "Language-agnostic real-time messaging server. Centrifugo supports at moment: Websocket and SockJS",
     "homepage": "https://centrifugal.dev",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/centrifugal/centrifugo/releases/download/v4.0.1/centrifugo_4.0.1_windows_amd64.zip",
-            "hash": "3bf0075e3fa7a4d0d7c80413e872978cf79127561adb911821f14343b1c6631e"
+            "url": "https://github.com/centrifugal/centrifugo/releases/download/v6.0.2/centrifugo_6.0.2_windows_amd64.zip",
+            "hash": "bf272f71594edbd8efbb2723140a4dd931677693297bebc687ef9210a298e2c2"
         }
     },
     "bin": "centrifugo.exe",

@@ -1,26 +1,26 @@
 {
-    "version": "25.1.1",
+    "version": "27.2.3",
     "description": "A programming language used to build massively scalable soft real-time systems with requirements on high availability.",
     "homepage": "https://www.erlang.org",
     "license": "Apache-2.0",
     "suggest": {
-        "Visual C/C++ Redistributable 2013": "extras/vcredist2013"
+        "vcredist": "extras/vcredist2022"
     },
     "architecture": {
         "64bit": {
-            "url": "https://erlang.org/download/otp_win64_25.1.1.exe#/dl.7z",
-            "hash": "0100105927ea79b579f3733c708e3b91e39d05cddf2491e0193469e3c9fa61d6"
+            "url": "https://github.com/erlang/otp/releases/download/OTP-27.2.3/otp_win64_27.2.3.exe#/dl.7z",
+            "hash": "cb3bc371d6c36b756086c5068fb61d422b372af1617c49346f93631c43b79275"
         },
         "32bit": {
-            "url": "https://erlang.org/download/otp_win32_25.1.1.exe#/dl.7z",
-            "hash": "c1cf03cc5881ce544df5a2744e800292efe235874184f9a9897bf8d9402bd314"
+            "url": "https://github.com/erlang/otp/releases/download/OTP-27.2.3/otp_win32_27.2.3.exe#/dl.7z",
+            "hash": "8d5e12679297491539ffd22997e49480adabd626c163b847df30a6c5d26446ae"
         }
     },
     "installer": {
         "file": "Install.exe",
         "args": "-sasl"
     },
-    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall.exe.nsis\", \"$dir\\vcredist*\" -Force -Recurse",
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\vcredist*\" -Force -Recurse",
     "bin": [
         "bin\\erl.exe",
         "bin\\erlc.exe",
@@ -37,16 +37,16 @@
         "ERLANG_HOME": "$dir"
     },
     "checkver": {
-        "url": "https://erlang.org/download/otp_versions_tree_app_vsns.html",
-        "regex": "otp_win64_([\\d.]+)\\.exe"
+        "url": "https://www.erlang.org/downloads",
+        "regex": "https://github\\.com/erlang/otp/releases/download/OTP-([\\d.]+)/otp_win64_\\1\\.exe"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://erlang.org/download/otp_win64_$version.exe#/dl.7z"
+                "url": "https://github.com/erlang/otp/releases/download/OTP-$version/otp_win64_$version.exe#/dl.7z"
             },
             "32bit": {
-                "url": "https://erlang.org/download/otp_win32_$version.exe#/dl.7z"
+                "url": "https://github.com/erlang/otp/releases/download/OTP-$version/otp_win32_$version.exe#/dl.7z"
             }
         }
     }

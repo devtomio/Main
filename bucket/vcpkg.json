@@ -1,23 +1,49 @@
 {
-    "version": "2022.09.27",
+    "version": "2025.01.13",
     "description": "C/C++ dependency manager from Microsoft For all platforms, buildsystems, and workflows",
     "homepage": "https://vcpkg.io/",
     "license": "MIT",
-    "url": "https://github.com/microsoft/vcpkg/archive/refs/tags/2022.09.27.zip",
-    "hash": "1aa4adf1e4b509207bf493bc0a0a81c3a60aece727723f67bef840863e291238",
-    "extract_dir": "vcpkg-2022.09.27",
+    "suggest": {
+        "Git": "git"
+    },
+    "url": "https://github.com/microsoft/vcpkg/archive/refs/tags/2025.01.13.zip",
+    "hash": "ab78561ee5a5227583964db69f6be33a1e36ab7dd1a9af79ce2e5885919c4446",
+    "extract_dir": "vcpkg-2025.01.13",
+    "pre_install": [
+        "if (Get-Command \"git.exe\" -ErrorAction SilentlyContinue) {",
+        "    if (!(Test-Path \"$persist_dir\")) {",
+        "        New-Item -ItemType Directory -Path \"$persist_dir\" | Out-Null",
+        "    }",
+        "    if (!(Test-Path \"$persist_dir\\.git\")) {",
+        "        git -C \"$dir\" init --quiet --separate-git-dir \"$persist_dir\\.git\"",
+        "        git -C \"$dir\" remote add -t master origin https://github.com/microsoft/vcpkg",
+        "    } else {",
+        "        Write-Output \"gitdir: $persist_dir\\.git\" | Out-File -FilePath \"$dir\\.git\"",
+        "    }",
+        "    git -C \"$dir\" fetch --quiet --tags",
+        "    git -C \"$dir\" reset --quiet --hard $version",
+        "} else {",
+        "    Write-Host -F Yellow \"Git was not detected in PATH, skipping repository setup.\"",
+        "}"
+    ],
     "installer": {
         "file": "bootstrap-vcpkg.bat",
+        "args": "-disableMetrics",
         "keep": true
     },
-    "bin": "vcpkg.exe",
     "post_install": "vcpkg integrate install",
     "uninstaller": {
         "script": "vcpkg integrate remove"
     },
+    "bin": "vcpkg.exe",
+    "env_set": {
+        "VCPKG_ROOT": "$dir"
+    },
     "persist": [
+        "buildtrees",
         "downloads",
-        "installed"
+        "installed",
+        "packages"
     ],
     "checkver": {
         "github": "https://github.com/microsoft/vcpkg/"

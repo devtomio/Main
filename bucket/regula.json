@@ -1,12 +1,12 @@
 {
-    "version": "2.9.2",
+    "version": "3.2.1",
     "description": "A tool to evaluate infrastructure as code files for potential AWS, Azure, Google Cloud, and Kubernetes security and compliance violations prior to deployment.",
     "homepage": "https://regula.dev/",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/fugue/regula/releases/download/v2.9.2/regula_2.9.2_Windows_x86_64.zip",
-            "hash": "39e8dd3afdc15a755c72ac300a498cc71ee2fcdb8f319b857018b2112cc22e8f"
+            "url": "https://github.com/fugue/regula/releases/download/v3.2.1/regula_3.2.1_Windows_x86_64.zip",
+            "hash": "2f828d996891ab6d106af72048b0625e853a8f374ba6cc6592c11a400fafc109"
         }
     },
     "bin": "regula.exe",

@@ -1,12 +1,12 @@
 {
-    "version": "0.34.0",
+    "version": "0.57.0",
     "description": "Test utility for structured configuration files",
     "homepage": "https://www.conftest.dev",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/open-policy-agent/conftest/releases/download/v0.34.0/conftest_0.34.0_Windows_x86_64.zip",
-            "hash": "b97a7932315697e68266b2b2604c04e7ee192672046fe62b6fbb512079108527"
+            "url": "https://github.com/open-policy-agent/conftest/releases/download/v0.57.0/conftest_0.57.0_Windows_x86_64.zip",
+            "hash": "3e452e50fd12b5f671ca05af67d521ac7e5150cd010bf3ad31bc90217d063c8f"
         }
     },
     "bin": "conftest.exe",

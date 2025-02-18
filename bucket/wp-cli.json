@@ -1,5 +1,5 @@
 {
-    "version": "2.6.0",
+    "version": "2.11.0",
     "description": "Command-line interface for WordPress",
     "homepage": "https://wp-cli.org",
     "license": "MIT",
@@ -10,8 +10,8 @@
             "php-nts"
         ]
     },
-    "url": "https://github.com/wp-cli/wp-cli/releases/download/v2.6.0/wp-cli-2.6.0.phar#/wp-cli.phar",
-    "hash": "sha512:d73f9161a1f03b8ecaac7b196b6051fe847b3c402b9c92b1f6f3acbe5b1cf91f7260c0e499b8947bab75920ecec918b39533ca65fa5a1fd3eb6ce7b8e2c58e7d",
+    "url": "https://github.com/wp-cli/wp-cli/releases/download/v2.11.0/wp-cli-2.11.0.phar#/wp-cli.phar",
+    "hash": "sha512:adb12146bab8d829621efed41124dcd0012f9027f47e0228be7080296167566070e4a026a09c3989907840b21de94b7a35f3bfbd5f827c12f27c5803546d1bba",
     "pre_install": [
         "echo 'if($args.length -eq 2 -and ($args[0] -eq \"cli\" -and $args[1] -eq \"update\")) { & scoop update wp-cli }' | out-file \"$dir\\wp.ps1\"",
         "echo 'else { & php (join-path $PSScriptRoot \"wp-cli.phar\") @args }' | out-file \"$dir\\wp.ps1\" -append"

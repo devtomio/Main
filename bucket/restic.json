@@ -1,16 +1,16 @@
 {
-    "version": "0.14.0",
+    "version": "0.17.3",
     "description": "Fast, secure and simple backup program.",
     "homepage": "https://restic.net/",
     "license": "BSD-2-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/restic/restic/releases/download/v0.14.0/restic_0.14.0_windows_amd64.zip",
-            "hash": "e1d81195194f684a0df34da1b4ff305d1c033283521c02f36a6f5cdeffcd6f2d"
+            "url": "https://github.com/restic/restic/releases/download/v0.17.3/restic_0.17.3_windows_amd64.zip",
+            "hash": "fcf5875de5a995100e8a2ecad5b0ada86b47155796bece87a425a251288c800f"
         },
         "32bit": {
-            "url": "https://github.com/restic/restic/releases/download/v0.14.0/restic_0.14.0_windows_386.zip",
-            "hash": "aeabbac9038f4826a043f2adb165c46b6e2af47bb363aab713f4841b793d5406"
+            "url": "https://github.com/restic/restic/releases/download/v0.17.3/restic_0.17.3_windows_386.zip",
+            "hash": "045c160ef53d1c32d6c5cf60bc3805026be807ddbfea1d9dbc90e1c5fdf94776"
         }
     },
     "bin": "restic.exe",

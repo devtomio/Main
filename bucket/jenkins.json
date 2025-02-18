@@ -1,14 +1,14 @@
 {
-    "version": "2.373",
+    "version": "2.497",
     "description": "An automation server which enables developers around the world to reliably build, test, and deploy their software.",
     "homepage": "https://www.jenkins.io",
     "license": "MIT",
     "suggest": {
-        "Java 8": "java/oraclejre8",
-        "Java 11": "java/openjdk11"
+        "Java 11": "java/openjdk11",
+        "Java 17": "java/openjdk17"
     },
-    "url": "https://get.jenkins.io/war/2.373/jenkins.war#/jenkins.jar",
-    "hash": "9bf0a21b0a4c8b385a46c68e628fd38d0b7410b1d09631700ebec58dd01d97f9",
+    "url": "https://get.jenkins.io/war/2.497/jenkins.war#/jenkins.jar",
+    "hash": "9b0ea73ffff18dc9a1691f0c60a31a7a4b84951edc5e46851605c9264167d466",
     "bin": "jenkins.jar",
     "checkver": {
         "url": "https://www.jenkins.io/changelog/rss.xml",

@@ -1,5 +1,5 @@
 {
-    "version": "8.1.0",
+    "version": "8.5.11",
     "description": "Camunda workflow instance monitor/manager",
     "homepage": "https://docs.camunda.io/docs/product-manuals/zeebe/zeebe-overview/",
     "license": {
@@ -17,11 +17,11 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/camunda/camunda-platform/releases/download/8.1.0/camunda-operate-8.1.0.zip",
-            "hash": "sha1:a16fb0dfe510abbad003d06a7787f460df0b17ec"
+            "url": "https://github.com/camunda/camunda-platform/releases/download/8.5%2Bgen16/camunda-operate-8.5.11.zip",
+            "hash": "sha1:9de5dd7b7e7b8498459782a3e5da08a5bc004779"
         }
     },
-    "extract_dir": "camunda-operate-8.0.0",
+    "extract_dir": "camunda-operate-8.5.11",
     "bin": [
         [
             "bin\\operate.bat",
@@ -30,17 +30,18 @@
     ],
     "persist": "config",
     "checkver": {
-        "github": "https://github.com/camunda/camunda-platform"
+        "url": "https://api.github.com/repos/camunda/camunda-platform/releases",
+        "regex": "download/(?<genVer>[\\d.]+%2Bgen[\\d.]+)/camunda-operate-([\\d.]+).zip"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/camunda/camunda-platform/releases/download/$version/camunda-operate-$version.zip"
+                "url": "https://github.com/camunda/camunda-platform/releases/download/$matchGenver/camunda-operate-$version.zip"
             }
         },
         "hash": {
             "url": "$url.sha1sum"
         },
-        "extract_dir": "camunda-operate-8.0.0"
+        "extract_dir": "camunda-operate-$version"
     }
 }

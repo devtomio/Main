@@ -1,16 +1,16 @@
 {
-    "version": "1.8.3",
+    "version": "1.12.0",
     "description": "Automates the creation of any type of virtual machine image.",
     "homepage": "https://www.packer.io",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://releases.hashicorp.com/packer/1.8.3/packer_1.8.3_windows_amd64.zip",
-            "hash": "8195f603916cfd4e4278c40e9c8b0a98128952d05e6c30fd19248f95ef71818c"
+            "url": "https://releases.hashicorp.com/packer/1.12.0/packer_1.12.0_windows_amd64.zip",
+            "hash": "3ce4e1d9901daba3355be03efd17b0f1d34a962cb5508de5a83368ed9070b216"
         },
         "32bit": {
-            "url": "https://releases.hashicorp.com/packer/1.8.3/packer_1.8.3_windows_386.zip",
-            "hash": "b6dfb6050c2613c6a2dcdefde0f45bf8a5fb73d442fc9fb1000e94f19afec7e3"
+            "url": "https://releases.hashicorp.com/packer/1.12.0/packer_1.12.0_windows_386.zip",
+            "hash": "4b73fc06614e64ea1fc3932175b00bb87b219dd3e27d85964d4bacdd47776cb7"
         }
     },
     "bin": "packer.exe",

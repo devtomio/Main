@@ -1,16 +1,12 @@
 {
-    "version": "2.5",
+    "version": "2.9",
     "description": "OpenSSL based Authenticode signing for PE/MSI/Java CAB files",
     "homepage": "https://github.com/mtrojnar/osslsigncode",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mtrojnar/osslsigncode/releases/download/2.5/osslsigncode-2.5-windows-x64-vs.zip",
-            "hash": "cc50954fbf034a6390f555dd60fbdf4ac9e1c27f90f947901870c2302c9032d8"
-        },
-        "32bit": {
-            "url": "https://github.com/mtrojnar/osslsigncode/releases/download/2.5/osslsigncode-2.5-windows-x86-vs.zip",
-            "hash": "7a7d59f7816d7c46a6c61b072c50c95af4f24ed954b1a398363e0df002b52155"
+            "url": "https://github.com/mtrojnar/osslsigncode/releases/download/2.9/osslsigncode-2.9-windows-x64-mingw.zip",
+            "hash": "2b7662a2a9072095906df80ba6e1d5aa29f2a288f4a7aa1f2190c5cdf7805d73"
         }
     },
     "bin": "bin\\osslsigncode.exe",
@@ -18,10 +14,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/mtrojnar/osslsigncode/releases/download/$version/osslsigncode-$version-windows-x64-vs.zip"
-            },
-            "32bit": {
-                "url": "https://github.com/mtrojnar/osslsigncode/releases/download/$version/osslsigncode-$version-windows-x86-vs.zip"
+                "url": "https://github.com/mtrojnar/osslsigncode/releases/download/$version/osslsigncode-$version-windows-x64-mingw.zip"
             }
         }
     }

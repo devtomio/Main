@@ -1,16 +1,20 @@
 {
-    "version": "0.14.1",
+    "version": "0.20.3",
     "description": "Automated code review tool integrated with any code analysis tools regardless of programming language.",
     "homepage": "https://github.com/reviewdog/reviewdog",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/reviewdog/reviewdog/releases/download/v0.14.1/reviewdog_0.14.1_Windows_x86_64.tar.gz",
-            "hash": "d6009abe6a5777962118fd227a2a9e6bafc1e15368af76d54eae88cf8631e1ad"
+            "url": "https://github.com/reviewdog/reviewdog/releases/download/v0.20.3/reviewdog_0.20.3_Windows_x86_64.tar.gz",
+            "hash": "068726ca98bbeb5e47378ab0b630133741e17ba1feb5654a24ec5e604446edef"
         },
         "32bit": {
-            "url": "https://github.com/reviewdog/reviewdog/releases/download/v0.14.1/reviewdog_0.14.1_Windows_i386.tar.gz",
-            "hash": "d217a7642bad97464bc2dd04198c6b6f3717b98c71cdf146ed974fc990c7c368"
+            "url": "https://github.com/reviewdog/reviewdog/releases/download/v0.20.3/reviewdog_0.20.3_Windows_i386.tar.gz",
+            "hash": "50f59ab334fb73e58701b6fa0827dd584fc1137ceb85fd3bdcb1a4c77e884aab"
+        },
+        "arm64": {
+            "url": "https://github.com/reviewdog/reviewdog/releases/download/v0.20.3/reviewdog_0.20.3_Windows_arm64.tar.gz",
+            "hash": "2dfd2c151aff8b7d2dfdfc44fb47706667806aea92f4f8238932bb89a0461d4a"
         }
     },
     "bin": "reviewdog.exe",
@@ -22,6 +26,9 @@
             },
             "32bit": {
                 "url": "https://github.com/reviewdog/reviewdog/releases/download/v$version/reviewdog_$version_Windows_i386.tar.gz"
+            },
+            "arm64": {
+                "url": "https://github.com/reviewdog/reviewdog/releases/download/v$version/reviewdog_$version_Windows_arm64.tar.gz"
             }
         },
         "hash": {

@@ -2,11 +2,11 @@
     "homepage": "https://odo.dev",
     "license": "Apache-2.0",
     "description": "Developer-focused CLI for OpenShift and Kubernetes.",
-    "version": "3.0.0",
+    "version": "3.16.1",
     "architecture": {
         "64bit": {
-            "url": "https://developers.redhat.com/content-gateway/rest/mirror/pub/openshift-v4/clients/odo/v3.0.0/odo-windows-amd64.exe#/odo.exe",
-            "hash": "cfe5991ef219101437a7a472cb374100f8a3df12562056502530c481eb6f109a"
+            "url": "https://developers.redhat.com/content-gateway/rest/mirror/pub/openshift-v4/clients/odo/v3.16.1/odo-windows-amd64.exe#/odo.exe",
+            "hash": "e147d6d9c9940389790084fcbff749600dbeafd5f4495320ba1a09ea0ddcef3c"
         }
     },
     "bin": "odo.exe",

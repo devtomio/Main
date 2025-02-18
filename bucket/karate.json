@@ -1,17 +1,15 @@
 {
-    "version": "1.2.0",
+    "version": "1.5.1",
     "description": "Test automation tool that combines API test-automation, mocks, performance-testing and UI automation into a single framework.",
     "homepage": "https://karatelabs.github.io/karate/",
     "license": "MIT",
     "suggest": {
         "Java": "java/openjdk"
     },
-    "url": "https://github.com/karatelabs/karate/releases/download/v1.2.0/karate-1.2.0.zip",
-    "hash": "2409af2123fa6afe238a2e572844fb6fad0155698d54066c51c7f7955d44491d",
-    "extract_dir": "karate-1.2.0",
+    "url": "https://github.com/karatelabs/karate/releases/download/v1.5.1/karate-1.5.1.jar#/karate.jar",
+    "hash": "0e4eeb77d7b17534af6aea9c025753dcde7ded3785f8c3682d3c783a63867311",
     "pre_install": [
-        "$cont = Get-Content \"$dir\\karate.bat\"",
-        "$cont = 'cd /d \"%~dp0\"' + \"`r`n\" + $cont",
+        "$cont = \"@echo off`r`n\" + 'cd /d \"%~dp0\"' + \"`r`njava -cp karate.jar;. com.intuit.karate.Main %*\"",
         "Set-Content \"$dir\\karate.bat\" $cont -Encoding ascii"
     ],
     "bin": "karate.bat",
@@ -20,7 +18,6 @@
         "github": "https://github.com/karatelabs/karate"
     },
     "autoupdate": {
-        "url": "https://github.com/karatelabs/karate/releases/download/v$version/karate-$version.zip",
-        "extract_dir": "karate-$version"
+        "url": "https://github.com/karatelabs/karate/releases/download/v$version/karate-$version.jar#/karate.jar"
     }
 }
